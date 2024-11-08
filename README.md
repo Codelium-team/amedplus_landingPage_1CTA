@@ -13,20 +13,13 @@
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/amedplus-landing-page.git
+   git clone https://github.com/Codelium-team/amedplus_landingPage_1CTA.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
-   cd amedplus-landing-page
+   cd amedplus_landingPage_1CTA
    ```
-3. Instala las dependencias necesarias:
-   ```bash
-   npm install
-   ```
-4. Inicia el servidor de desarrollo:
-   ```bash
-   npm start
-   ```
+3. Abre el archivo `index.html` en tu navegador para ver la página.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -55,12 +48,12 @@ amedplus-landing-page/
 
 1. **Clonar este repositorio en tu entorno local**  
     ```bash
-    git clone https://github.com/tu-usuario/amedplus-landing-page.git
+    git clone https://github.com/Codelium-team/amedplus_landingPage_1CTA.git
     ```
 
 2. **Cada tarea debe tener una rama creada**  
     ```bash
-    git checkout -b nombre_de_la_rama
+    git checkout -b nombreDelDesarollador_laTarea
     ```
     
 3. **Actualizar los cambios que puedan existir en la rama `develop` antes de trabajar**  
