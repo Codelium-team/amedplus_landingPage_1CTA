@@ -34,27 +34,20 @@
 - **CSS3**
 - **Bootstrap**
 - **JavaScript**
-- **React**
 
 ## 📂 Estructura del Proyecto
 
 ```plaintext
 amedplus-landing-page/
-├── public/
-│   ├── index.html
+├── css/
+│   ├── main.css
 │   └── ...
-├── src/
-│   ├── components/
-│   │   ├── Header.js
-│   │   ├── Footer.js
-│   │   ├── ...
-│   ├── styles/
-│   │   ├── main.css
-│   │   └── ...
-│   ├── App.js
-│   ├── index.js
+├── js/
+│   ├── main.js
 │   └── ...
-├── package.json
+├── images/
+│   └── ...
+├── index.html
 └── README.md
 ```
 
