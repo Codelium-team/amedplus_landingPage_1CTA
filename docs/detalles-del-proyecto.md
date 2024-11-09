@@ -67,7 +67,7 @@ El negocio tiene un logo transparente y un favicon. La paleta de colores del log
   - **Horario de Atención:** Lunes a Viernes de 10:00 hrs a 17:00 hrs.
   - **Redes Sociales:** Facebook (https://www.facebook.com/p/AmedPlus-Productos-M%C3%A9dicos-10006421233739), WhatsApp (por definir).
  
-## Las diferentes vistas del proyecto
+## Ejemplo de vistas del proyecto
 
 - **Inicio**
 
