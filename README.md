@@ -32,6 +32,9 @@
 
 ```plaintext
 amedplus-landing-page/
+├── docs/
+│   ├── detalles-del-proyecto.md
+│   └── ...
 ├── css/
 │   ├── main.css
 │   └── ...
@@ -39,6 +42,9 @@ amedplus-landing-page/
 │   ├── main.js
 │   └── ...
 ├── images/
+│   └── ...
+├── src/
+│   ├── app.js
 │   └── ...
 ├── index.html
 └── README.md
