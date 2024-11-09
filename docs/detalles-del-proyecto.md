@@ -66,6 +66,29 @@ El negocio tiene un logo transparente y un favicon. La paleta de colores del log
   - **Dirección:** Gamero #111, Rancagua.
   - **Horario de Atención:** Lunes a Viernes de 10:00 hrs a 17:00 hrs.
   - **Redes Sociales:** Facebook (https://www.facebook.com/p/AmedPlus-Productos-M%C3%A9dicos-10006421233739), WhatsApp (por definir).
+ 
+## Las diferentes vistas del proyecto
+
+- **Inicio**
+
+![image](https://github.com/user-attachments/assets/980c3c65-0630-49f6-b098-972489753338)
+
+- **Acerca de**
+
+![image](https://github.com/user-attachments/assets/7e19220d-09c8-4be6-b9ff-34e9aaf4fa77)
+
+- **Categorías**
+
+![image](https://github.com/user-attachments/assets/569b50ca-7a67-4822-b81a-a280c4997156)
+
+- **Tienda**
+
+![image](https://github.com/user-attachments/assets/94a6fec2-4d33-4bd9-b018-7a2f808f30ff)
+
+- **Contacto**
+
+![image](https://github.com/user-attachments/assets/af2558ef-6522-47d3-9ad9-043670b9832f)
+
 
 ## Tecnologías a Utilizar
 HTML, CSS, Bootstrap y JavaScript si es necesario.
