@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/*  */
 .contenedor {
     margin: 0;
     padding: 0;
@@ -14,18 +13,54 @@
 }
 
 main {
+    margin: 0;
+    padding: 0;
     flex-grow: 1;
     overflow-y: auto;
 }
+
 .imgLogo {
     width: 200px;
 }
 
+.titulo-inicio{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 200px;
+    background-image: url(../images/woman-buys-drugs-pharmacy.jpg);
+    background-position: right;
+    background-size: cover  ;
+    background-repeat: no-repeat;
+}
+.descripcion-inicio {
+    display: flex;
+    
+}
+
+.text-descrip-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes-descrip-inicio {
+    display: flex;
+    width: 60%;
+}
+
+.imagenes-inicio {
+    width: 200px;
+    padding: 25px;
+}
+
 /* temporal */
-.inicio,
+/* .inicio,
 .acercaDe,
 .categoria,
 .tienda,
 .contacto {
     height: 60vh;
-}
+} */
