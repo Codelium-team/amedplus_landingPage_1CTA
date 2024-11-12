@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: #efefef; */
 }
 
 .contenedor {
@@ -54,6 +55,7 @@ main {
 .imagenes-inicio {
     width: 200px;
     padding: 25px;
+    mix-blend-mode: darken;
 }
 
 /* temporal */
