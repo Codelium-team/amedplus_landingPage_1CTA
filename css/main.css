@@ -24,21 +24,35 @@ main {
     width: 200px;
 }
 
-.titulo-inicio{
+.titulo-inicio {
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding-left: 200px;
     background-image: url(../images/woman-buys-drugs-pharmacy.jpg);
     background-position: right;
-    background-size: cover  ;
+    background-size: cover;
     background-repeat: no-repeat;
 }
+
+.text-tituo-inicio {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.text-tituo-inicio h2{
+    font-size: 48px;
+}
+
+.text-tituo-inicio p{
+    font-size: 24px;
+}
+
 .descripcion-inicio {
     display: flex;
-    
+
 }
 
 .text-descrip-inicio {
@@ -48,8 +62,9 @@ main {
 }
 
 .imagenes-descrip-inicio {
+    justify-content: center;
     display: flex;
-    width: 60%;
+    flex-wrap: nowrap;
 }
 
 .imagenes-inicio {
@@ -58,11 +73,36 @@ main {
     mix-blend-mode: darken;
 }
 
-/* temporal */
-/* .inicio,
-.acercaDe,
-.categoria,
-.tienda,
-.contacto {
-    height: 60vh;
-} */
+@media (max-width: 960px) {
+    .descripcion-inicio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagenes-descrip-inicio {
+        flex-wrap: wrap;
+    }
+
+    .titulo-inicio {
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-tituo-inicio {
+        padding: 20px;
+        background-color: rgb(0, 0, 0, 0.4);
+        color: white;
+        border-radius: 5px;
+
+    }
+
+    .text-tituo-inicio h2{
+        font-size: 24px;
+    }
+    
+    .text-tituo-inicio p{
+        font-size: 16px;
+    }
+
+}
