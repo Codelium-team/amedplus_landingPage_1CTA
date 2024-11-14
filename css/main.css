@@ -219,6 +219,12 @@ footer {
     }
 }
 
+@media(max-width:768px){
+    .titulo-inicio{
+        height: 300px;
+    }
+}
+
 @media (max-width:600px) {
     .img-oculta2 {
         display: none;
@@ -281,7 +287,16 @@ footer {
 }
 
 @media (max-width:400px) {
+    .navbar-brand{
+        width: 65%;
+    }
+    .imgLogo{
+        width: 100%;
+    }
     .card-cat {
         width: 80%;
+    }
+    .text-tituo-inicio{
+        width: 85%;
     }
 }
