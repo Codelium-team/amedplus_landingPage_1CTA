@@ -13,6 +13,15 @@
     height: 100vh;
 }
 
+.btn {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-cat {
+    text-decoration: none;
+}
+
 main {
     margin: 0;
     padding: 0;
@@ -38,6 +47,7 @@ main {
 
 .text-tituo-inicio {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding-left: 200px;
 }
@@ -52,6 +62,8 @@ main {
 
 .descripcion-inicio {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -62,13 +74,6 @@ main {
     justify-content: center;
 }
 
-.btn-inicio button{
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
 
 .imagenes-descrip-inicio {
     width: 100%;
@@ -85,6 +90,34 @@ main {
 
 .titulo-acercaDe {
     text-align: center;
+}
+
+
+.container-nos {
+    display: flex;
+    margin: 24px;
+}
+
+.img-nos{
+    width: 50%;
+}
+
+.img-nos img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.text-nos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-nos{
+    display: flex;
+    justify-content: center;
 }
 
 .txt-serv {
@@ -168,15 +201,6 @@ main {
     display: flex;
     justify-content: center;
 }
-
-.btn-cat button {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 5px;
-    border: solid 1px rgb(130, 130, 132)
-}
-
 
 /* Temporal */
 footer {
