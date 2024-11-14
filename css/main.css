@@ -42,11 +42,11 @@ main {
     padding-left: 200px;
 }
 
-.text-tituo-inicio h2{
+.text-tituo-inicio h2 {
     font-size: 48px;
 }
 
-.text-tituo-inicio p{
+.text-tituo-inicio p {
     font-size: 24px;
 }
 
@@ -62,9 +62,9 @@ main {
 }
 
 .imagenes-descrip-inicio {
-    justify-content: center;
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .imagenes-inicio {
@@ -73,22 +73,22 @@ main {
     mix-blend-mode: darken;
 }
 
-.titulo-acercaDe{
+.titulo-acercaDe {
     text-align: center;
 }
 
-.txt-serv{
+.txt-serv {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
 }
 
-.parrafo-serv{
+.parrafo-serv {
     width: 500px;
 }
 
-.img-serv{
+.img-serv {
     width: 300px;
     height: 200px;
     overflow: hidden;
@@ -97,15 +97,83 @@ main {
     border-radius: 5px;
 }
 
-.img-serv img{
-width: 100%;
-object-fit: cover;
-object-position: center;
+.img-serv img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
+
+.titulo-cat {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contenedor-cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.card-cat {
+    width: 500px;
+    display: flex;
+    padding: 10px;
+    align-items: start;
+    justify-content: start;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.img-cat {
+    display: flex;
+    flex: 0 0 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-cat {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.txt-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    flex: 1;
+}
+
+
+.btn-cat {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cat button {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px rgb(130, 130, 132)
+}
+
+
 /* Temporal */
 footer {
     background-color: black;
 }
+
+
 @media (max-width: 960px) {
     .descripcion-inicio {
         flex-direction: column;
@@ -130,24 +198,90 @@ footer {
 
     }
 
-    .text-tituo-inicio h2{
+    .text-tituo-inicio h2 {
         font-size: 24px;
     }
-    
-    .text-tituo-inicio p{
+
+    .text-tituo-inicio p {
         font-size: 16px;
     }
-    .txt-serv{
+
+
+
+    .parrafo-serv {
+        width: 100%;
+    }
+
+
+
+    .img-serv {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .img-oculta2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .txt-serv {
         flex-direction: column;
         padding: 25px 50px 25px 50px;
     }
-    .parrafo-serv{
-        width: 100%;
-    }
-    .serv2-acercaDe{
+
+    .serv2-acercaDe {
         flex-direction: column-reverse;
     }
-    .img-serv{
-        margin: 10px 0px 10px 0px;
+
+    .card-cat {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:500px) {
+    .imagenes-inicio {
+        width: 95%;
+    }
+
+    .img-oculta {
+        display: none;
+        visibility: hidden;
+    }
+
+    .img-serv {
+        width: 95%;
+        height: auto;
+    }
+
+    .img-serv {
+        width: 95%;
+    }
+
+    .card-cat {
+        width: 70%;
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+        align-items: center;
+    }
+
+    .img-cat {
+        width: 100%;
+    }
+
+    .txt-cat {
+        padding-left: 0;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .txt-cat h5 {
+        text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    .card-cat {
+        width: 80%;
     }
 }

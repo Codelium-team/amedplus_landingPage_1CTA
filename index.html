@@ -15,9 +15,9 @@
 <body>
     <div class="contenedor" id="contenedor">
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <nav class="navbar navbar-expand-md bg-body-tertiary p-0">
                 <div class="container-fluid">
-                    <a class="navbar-brand ps-5" href="#">
+                    <a class="navbar-brand ps-3" href="#">
                         <img class="imgLogo" src="./images/Logo.png" alt="Logo Amedplus">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,7 +28,7 @@
                     <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link px-3" aria-current="page" href="#inicio">INICIO</a>
-                            <a class="nav-link px-3" href="#acercaDe">ACERCA DE</a>
+                            <a class="nav-link px-3" href="#acercaDe">NOSOTROS</a>
                             <a class="nav-link px-3" href="#categoria">CATEGORÍAS</a>
                             <a class="nav-link px-3" href="#tienda">TIENDA</a>
                             <a class="nav-link px-3" aria-disabled="true" href="#contacto">CONTACTO</a>
@@ -52,9 +52,9 @@
                             personalizados, diseñados para brindar el mejor cuidado a tu salud.</p>
                     </div>
                     <div class="imagenes-descrip-inicio">
-                        <img src="./images/Guantes.jpg" alt="img1" class="imagenes-inicio">
-                        <img src="./images/Jeringas.jpg" alt="img2" class="imagenes-inicio">
-                        <img src="./images/Tomapresión.jpg" alt="img3" class="imagenes-inicio">
+                        <img src="./images/Jeringas.jpg" alt="img2" class="imagenes-inicio"> <!-- Buscar iagen referente a variedad de productos -->
+                        <img src="./images/Guantes.jpg" alt="img1" class="imagenes-inicio img-oculta2">
+                        <img src="./images/Tomapresión.jpg" alt="img3" class="imagenes-inicio img-oculta">
                     </div>
                 </div>
             </section>
@@ -93,11 +93,61 @@
                         <img class="img-serv" src="./images/EnvioGratis.png" alt="imagen-beneficios">
                     </div>
                 </div>
-
-
             </section>
             <section class="categoria" id="categoria">
-                <h1>Seccion de Categorias</h1>
+                <div class="titulo-cat">
+                    <h1>Categorias</h1>
+                </div>
+                <div class="contenedor-cat">
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/Equipo-Medico.jpg" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat">Equipos Médicos</h5>
+                            <p>Tecnología médica orientada a mantener tu bienestar.</p>
+                            <div class="btn-cat">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/productos-medicos.png" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat"> Suministros hospitalarios</h5>
+                            <p>Todo lo que necesitas para el uso cotidiano en un entorno clínico.</p>
+                            <div class="btn-cat">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/Pañales.jpg" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat">Cuidado en el hogar</h5>
+                            <p>Productos pensados para facilitar el cuidado de pacientes en casa.</p>
+                            <div class="btn-cat">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/protection-realistic-set.jpg" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat">Protección personal</h5>
+                            <p>Mascarillas, guantes y otros insumos similares de uso clínico.</p>
+                            <div class="btn-cat">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="tienda" id="tienda">
                 <h1>Secion de Tienda</h1>
