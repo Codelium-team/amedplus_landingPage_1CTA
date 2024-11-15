@@ -107,13 +107,14 @@ main {
     width: 100%;
     border-radius: 5px;
 }
-.img-nos-responsive{
+
+.img-nos-responsive {
     display: none;
     visibility: hidden;
     flex: 1
 }
 
-.img-nos-responsive img{
+.img-nos-responsive img {
     width: 100%;
 }
 
@@ -177,7 +178,7 @@ main {
     align-items: start;
     justify-content: start;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     background-color: #fff;
 }
 
@@ -212,10 +213,120 @@ main {
     justify-content: center;
 }
 
+.tienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-tienda {
+    margin: 40px 0px 30px 0px;
+}
+
+.container-tienda {
+    width: 100%;
+}
+
+.swiper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+.swiper-wrapper {
+    display: flex !important;
+    height: 530px !important;
+}
+
+.swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    border: solid 1px #ececec;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    object-fit: cover;
+}
+
+.text-card-tienda {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between !important;
+    padding: 0px 10px 10px 10px;
+    height: 100%;
+}
+
+.txt-tienda h5 {
+    padding: 15px 0px 15px 0px;
+    border-bottom: solid 1px #ececec;
+    border-top: solid 1px #ececec;
+}
+
+.text-card-tienda p {
+    text-align: start;
+}
+
+
 /* Temporal */
 footer {
     background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
 }
+.maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.direccion a,
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#icon-uno {
+    filter: invert(38%) sepia(32%) saturate(1020%) hue-rotate(181deg) brightness(94%) contrast(91%);
+}
+
+#icon-dos {
+    filter: invert(80%) sepia(20%) saturate(2700%) hue-rotate(79deg) brightness(91%) contrast(81%);
+}
+
+#icon-tres {
+    filter: invert(37%) sepia(39%) saturate(7031%) hue-rotate(337deg) brightness(78%) contrast(137%);
+}
+#icon-cuatro {
+    filter: invert(38%) sepia(1%) saturate(621%) hue-rotate(7deg) brightness(99%) contrast(81%);}
+
+
 
 @media (max-width:1024px) {
     .img-nos {
@@ -223,11 +334,9 @@ footer {
         height: 100%;
         object-position: center;
         object-fit: cover;
-        /* display: none;
-        visibility: hidden; */
     }
 
-    .text-nos{
+    .text-nos {
         flex: 1;
     }
 }
@@ -277,12 +386,13 @@ footer {
     }
 }
 
-@media(max-width:840px){
-    .img-nos{
+@media(max-width:840px) {
+    .img-nos {
         display: none;
         visibility: hidden;
     }
-    .img-nos-responsive{
+
+    .img-nos-responsive {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -294,15 +404,23 @@ footer {
         border-radius: 5px;
         width: 180px;
     }
-    .responsive-nos{
+
+    .responsive-nos {
         display: flex;
     }
-    
-    .descrip-nos{
+
+    .descrip-nos {
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media (max-width:650px){
+    footer {
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
@@ -328,12 +446,18 @@ footer {
     .card-cat {
         width: 90%;
     }
-    .img-nos-responsive{
+
+    .img-nos-responsive {
         display: none;
         visibility: hidden;
     }
-    .descrip-nos{
+
+    .descrip-nos {
         width: 100%;
+    }
+
+    .swiper-wrapper {
+        height: 550px !important;
     }
 }
 
@@ -380,6 +504,10 @@ footer {
     .txt-cat h5 {
         text-align: center;
     }
+
+    .swiper-wrapper {
+        height: 480px !important;
+    }
 }
 
 @media (max-width:400px) {
@@ -397,5 +525,9 @@ footer {
 
     .text-tituo-inicio {
         width: 85%;
+    }
+
+    .swiper-wrapper {
+        height: 530px !important;
     }
 }
