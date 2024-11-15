@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: #efefef; */
 }
 
-/*  */
 .contenedor {
     margin: 0;
     padding: 0;
@@ -13,19 +13,389 @@
     height: 100vh;
 }
 
+.btn {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-cat {
+    text-decoration: none;
+}
+
 main {
+    margin: 0;
+    padding: 0;
     flex-grow: 1;
     overflow-y: auto;
 }
+
 .imgLogo {
     width: 200px;
 }
 
-/* temporal */
-.inicio,
-.acercaDe,
-.categoria,
-.tienda,
-.contacto {
-    height: 60vh;
+.titulo-inicio {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-image: url(../images/woman-buys-drugs-pharmacy.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-tituo-inicio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.text-tituo-inicio h2 {
+    font-size: 48px;
+}
+
+.text-tituo-inicio p {
+    font-size: 24px;
+}
+
+.descripcion-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-descrip-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagenes-descrip-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes-inicio {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    mix-blend-mode: darken;
+}
+
+.titulo-acercaDe {
+    text-align: center;
+}
+
+
+.container-nos {
+    display: flex;
+    margin: 24px;
+}
+
+.img-nos {
+    width: 50%;
+}
+
+
+.img-nos img {
+    width: 100%;
+    border-radius: 5px;
+}
+.img-nos-responsive{
+    display: none;
+    visibility: hidden;
+    flex: 1
+}
+
+.img-nos-responsive img{
+    width: 100%;
+}
+
+.text-nos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-nos {
+    display: flex;
+    justify-content: center;
+}
+
+.txt-serv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.parrafo-serv {
+    width: 500px;
+}
+
+.img-serv {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.img-serv img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titulo-cat {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contenedor-cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.card-cat {
+    width: 500px;
+    display: flex;
+    padding: 10px;
+    align-items: start;
+    justify-content: start;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.img-cat {
+    display: flex;
+    flex: 0 0 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-cat {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.txt-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    flex: 1;
+}
+
+
+.btn-cat {
+    display: flex;
+    justify-content: center;
+}
+
+/* Temporal */
+footer {
+    background-color: black;
+}
+
+@media (max-width:1024px) {
+    .img-nos {
+        width: 40%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        /* display: none;
+        visibility: hidden; */
+    }
+
+    .text-nos{
+        flex: 1;
+    }
+}
+
+@media (max-width: 960px) {
+    .descripcion-inicio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagenes-descrip-inicio {
+        flex-wrap: wrap;
+    }
+
+    .titulo-inicio {
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-tituo-inicio {
+        padding: 20px;
+        background-color: rgb(0, 0, 0, 0.4);
+        color: white;
+        border-radius: 5px;
+
+    }
+
+    .text-tituo-inicio h2 {
+        font-size: 24px;
+    }
+
+    .text-tituo-inicio p {
+        font-size: 16px;
+    }
+
+
+
+    .parrafo-serv {
+        width: 100%;
+    }
+
+
+
+    .img-serv {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media(max-width:840px){
+    .img-nos{
+        display: none;
+        visibility: hidden;
+    }
+    .img-nos-responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+
+    }
+
+    .img-nos-responsive img {
+        border-radius: 5px;
+        width: 180px;
+    }
+    .responsive-nos{
+        display: flex;
+    }
+    
+    .descrip-nos{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:600px) {
+    .titulo-inicio {
+        height: 300px;
+    }
+
+    .img-oculta2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .txt-serv {
+        flex-direction: column;
+        padding: 25px 50px 25px 50px;
+    }
+
+    .serv2-acercaDe {
+        flex-direction: column-reverse;
+    }
+
+    .card-cat {
+        width: 90%;
+    }
+    .img-nos-responsive{
+        display: none;
+        visibility: hidden;
+    }
+    .descrip-nos{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:500px) {
+    .titulo-inicio {
+        height: 200px;
+    }
+
+    .imagenes-inicio {
+        width: 95%;
+    }
+
+    .img-oculta {
+        display: none;
+        visibility: hidden;
+    }
+
+    .img-serv {
+        width: 95%;
+        height: auto;
+    }
+
+    .img-serv {
+        width: 95%;
+    }
+
+    .card-cat {
+        width: 70%;
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+        align-items: center;
+    }
+
+    .img-cat {
+        width: 100%;
+    }
+
+    .txt-cat {
+        padding-left: 0;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .txt-cat h5 {
+        text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar-brand {
+        width: 65%;
+    }
+
+    .imgLogo {
+        width: 100%;
+    }
+
+    .card-cat {
+        width: 80%;
+    }
+
+    .text-tituo-inicio {
+        width: 85%;
+    }
 }

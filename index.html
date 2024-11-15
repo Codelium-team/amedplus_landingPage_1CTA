@@ -15,9 +15,9 @@
 <body>
     <div class="contenedor" id="contenedor">
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-md bg-body-tertiary p-0">
                 <div class="container-fluid">
-                    <a class="navbar-brand ps-5" href="#">
+                    <a class="navbar-brand ps-3" href="#">
                         <img class="imgLogo" src="./images/Logo.png" alt="Logo Amedplus">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,10 +25,10 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link px-3" aria-current="page" href="#inicio">INICIO</a>
-                            <a class="nav-link px-3" href="#acercaDe">ACERCA DE</a>
+                            <a class="nav-link px-3" href="#acercaDe">NOSOTROS</a>
                             <a class="nav-link px-3" href="#categoria">CATEGORÍAS</a>
                             <a class="nav-link px-3" href="#tienda">TIENDA</a>
                             <a class="nav-link px-3" aria-disabled="true" href="#contacto">CONTACTO</a>
@@ -38,21 +38,170 @@
             </nav>
         </header>
         <main>
-            <div class="inicio" id="inicio">
-                <h1>Seccion de inicio</h1>
-            </div>
-            <div class="acercaDe" id="acercaDe">
-                <h1>Seccion de Acerca de</h1>
-            </div>
-            <div class="categoria" id="categoria">
-                <h1>Seccion de Categorias</h1>
-            </div>
-            <div class="tienda" id="tienda">
+            <section class="inicio" id="inicio">
+                <div class="titulo-inicio">
+                    <div class="text-tituo-inicio">
+                        <h2>AmedPlus</h2>
+                        <p>Cuidando tu salud con soluciones de confianza</p>
+                    </div>
+                </div>
+                <div class="descripcion-inicio">
+                    <div class="text-descrip-inicio m-4">
+                        <p class="p-2">Descubre nuestra gama de productos médicos de alta calidad y servicios de
+                            asesorías
+                            personalizados, diseñados para brindar el mejor cuidado a tu salud.</p>
+                        <a class="btn-inicio" href="#contacto"><button type="button"
+                                class="btn btn-dark">Comprar</button></a>
+                    </div>
+                    <div class="imagenes-descrip-inicio">
+                        <img src="./images/Jeringas.jpg" alt="img2" class="imagenes-inicio">
+                        <!-- Buscar iagen referente a variedad de productos -->
+                        <img src="./images/Guantes.jpg" alt="img1" class="imagenes-inicio img-oculta2">
+                        <img src="./images/Tomapresión.jpg" alt="img3" class="imagenes-inicio img-oculta">
+                    </div>
+                </div>
+            </section>
+            <section class="acercaDe" id="acercaDe">
+                <!-- <div class="titulo-acercaDe">
+                    <h1>Quienes somos?</h1>
+                </div> -->
+                <div class="container-nos">
+                    <div class="img-nos">
+                        <img src="./images/getty-images-ZLjLr9HwUGs-unsplash.jpg" alt="Nosotros">
+                    </div>
+                    <div class="text-nos">
+                        <div class="responsive-nos">
+                            <div class="descrip-nos">
+                                <h5>¿Quienes somos?</h5>
+                                <p>En Amedplus ofrecemos productos médicos de la mejor calidad, junto con servicios de
+                                    consulta
+                                    y
+                                    asesoría que facilitan una mejor elección del producto adecuado para cada paciente.
+                                </p>
+                            </div>
+                            <div class="img-nos-responsive">
+                                <img src="./images/productos-hospitales.jpg" alt="Nosotros">
+                            </div>
+                        </div>
+                        <div class="responsive-nos">
+                            <div class="descrip-nos">
+                                <p>Nos especializamos en atender las necesidades de nuestros clientes con enfoque en la
+                                    excelencia.
+                                    Nuestro servicio está orientado a entregar atención especial a personas de la
+                                    tercera
+                                    edad
+                                </p>
+                            </div>
+                            <div class="img-nos-responsive">
+                                <img src="./images/atencion-farmacia.jpg" alt="Nosotros">
+                            </div>
+                        </div>
+                        <div class="">
+                            <h5>Beneficios?</h5>
+                            <p>Despacho a domicilio sin costo, descuentos especiales, atención personalizada y mucho
+                                más!
+                            </p>
+                            <div class="btn-nos">
+                                <a href="#contacto"><button type="button" class="btn btn-dark">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="serv1-acercaDe txt-serv">
+                    <div class="parrafo-serv">
+                        <p>En Amedplus ofrecemos productos médicos de la mejor calidad, junto con servicios de consulta
+                            y
+                            asesoría que facilitan una mejor elección del producto adecuado para cada paciente.</p>
+                    </div>
+                    <div class="img-serv">
+                        <img src="./images/productos-medicos.png" alt="imagen-servicos">
+                    </div>
+                </div>
+                <div class="serv2-acercaDe txt-serv">
+                    <div class="img-serv ">
+                        <img src="./images/atencion-3era-edad.jpg" alt="imagen2-servicios">
+                    </div>
+                    <div class="parrafo-serv">
+                        <p>Nos especializamos en atender las necesidades de nuestros clientes con enfoque en la
+                            excelencia.
+                            Nuestro servicio está orientado a entregar atención especial a personas de la tercera edad
+                        </p>
+                    </div>
+                </div>
+                <div class="beneficio-acercaDe txt-serv">
+                    <div class=" parrafo-serv">
+                        <h5>Beneficios?</h5>
+                        <p>Despacho a domicilio sin costo, descuentos especiales, atención personalizada y mucho más!
+                        </p>
+                    </div>
+                    <div class="img-beneficio">
+                        <img class="img-serv" src="./images/EnvioGratis.png" alt="imagen-beneficios">
+                    </div>
+                </div> -->
+            </section>
+            <section class="categoria" id="categoria">
+                <div class="titulo-cat">
+                    <h1>Categorias</h1>
+                </div>
+                <div class="contenedor-cat">
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/Equipo-Medico.jpg" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat">Equipos Médicos</h5>
+                            <p>Tecnología médica orientada a mantener tu bienestar.</p>
+                            <a href="#contacto" class="btn-cat">
+                                <button type="button" class="btn btn-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/productos-medicos.png" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat"> Suministros hospitalarios</h5>
+                            <p>Todo lo que necesitas para el uso cotidiano en un entorno clínico.</p>
+                            <a href="#contacto" class="btn-cat">
+                                <button type="button" class="btn btn-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/Pañales.jpg" alt="imgen de categoria" class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat">Cuidado en el hogar</h5>
+                            <p>Productos pensados para facilitar el cuidado de pacientes en casa.</p>
+                            <a href="#contacto" class="btn-cat">
+                                <button type="button" class="btn btn-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-cat">
+                        <div class="img-cat">
+                            <img src="./images/protection-realistic-set.jpg" alt="imgen de categoria"
+                                class="imagen-cat">
+                        </div>
+                        <div class="txt-cat">
+                            <h5 class="titulo-card-cat">Protección personal</h5>
+                            <p>Mascarillas, guantes y otros insumos similares de uso clínico.</p>
+                            <a href="#contacto" class="btn-cat">
+                                <button type="button" class="btn btn-dark">Comprar</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tienda" id="tienda">
                 <h1>Secion de Tienda</h1>
-            </div>
-            <div class="contacto" id="contacto">
+            </section>
+            <section class="contacto" id="contacto">
                 <h1>Seccion de contacto</h1>
-            </div>
+            </section>
         </main>
         <footer>
             <h1>Este es el footer</h1>
