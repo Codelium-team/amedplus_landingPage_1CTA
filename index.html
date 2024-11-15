@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -197,8 +198,147 @@
                 </div>
             </section>
             <section class="tienda" id="tienda">
-                <h1>Secion de Tienda</h1>
+                <div class="titulo-tienda">
+                    <h1>Productos más solicitados</h1>
+                </div>
+                <div class="container-tienda">
+                    <div class="swiper mySwiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide carta">
+                                <img class="img-tienda" src="./images/Pañales.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Pañales para adulto</h5>
+                                        <p>Ofrecen una alta capacidad de absorción, garantizando comodidad y protección,
+                                            evitando la irritación de la piel y proporcionando una sensación de
+                                            frescura.
+                                            Trabajamos con todas las marcas líderes en el mercado.</p>
+                                    </div>
+                                    <a href="#contacto">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide carta">
+                                <img class="img-tienda" src="./images/guantes-quirurjicos.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Guantes quirúrgicos</h5>
+                                        <p>on distintos tipos de material y tamaños, ofrecen una excelente sensibilidad
+                                            y ajuste anatómico para procedimientos hospitalarios.</p>
+                                    </div>
+                                    <a href="#contacto">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-tienda" src="./images/Jeringas.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Jeringas</h5>
+                                        <p> Disponibles en una gran variedad de capacidades, tamaños y funciones
+                                            objetivo, asegurando encontrar la opción más adecuada a cada necesidad.</p>
+                                    </div>
+                                    <a href="#contacto">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-tienda" src="./images/Tomapresión.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+
+                                        <h5>Tomapresión Digital</h5>
+                                        <p>Uno de los instrumentos médicos que permite monitorear los valores
+                                            relacionados a la presión arterial y la frecuencia cardíaca. Es portátil y
+                                            fácil de usar.</p>
+                                    </div>
+                                    <a href="#contacto">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </section>
+            <!-- <div class="swiper">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-tienda">
+                                    <div class="img-card-tienda">
+                                        <img src="./images/Pañales.jpg" alt="foto de producto">
+                                    </div>
+                                    <div class="txt-card-tienda">
+                                        <h5>Pañales para Adultos</h5>
+                                        <p>Ofrecen una alta capacidad de absorción, garantizando comodidad y protección,
+                                            evitando la irritación de la piel y proporcionando una sensación de
+                                            frescura. Trabajamos con todas las marcas líderes en el mercado.</p>
+                                        <a href="#contacto"><button type="button"
+                                                class="btn btn-dark">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-tienda">
+                                    <div class="img-card-tienda">
+                                        <img src="./images/Pañales.jpg" alt="foto de producto">
+                                    </div>
+                                    <div class="txt-card-tienda">
+                                        <h5>Pañales para Adultos</h5>
+                                        <p>Ofrecen una alta capacidad de absorción, garantizando comodidad y protección,
+                                            evitando la irritación de la piel y proporcionando una sensación de
+                                            frescura. Trabajamos con todas las marcas líderes en el mercado.</p>
+                                        <a href="#contacto"><button type="button"
+                                                class="btn btn-dark">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-tienda">
+                                    <div class="img-card-tienda">
+                                        <img src="./images/Pañales.jpg" alt="foto de producto">
+                                    </div>
+                                    <div class="txt-card-tienda">
+                                        <h5>Pañales para Adultos</h5>
+                                        <p>Ofrecen una alta capacidad de absorción, garantizando comodidad y protección,
+                                            evitando la irritación de la piel y proporcionando una sensación de
+                                            frescura. Trabajamos con todas las marcas líderes en el mercado.</p>
+                                        <a href="#contacto"><button type="button"
+                                                class="btn btn-dark">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-tienda">
+                                    <div class="img-card-tienda">
+                                        <img src="./images/Pañales.jpg" alt="foto de producto">
+                                    </div>
+                                    <div class="txt-card-tienda">
+                                        <h5>Pañales para Adultos</h5>
+                                        <p>Ofrecen una alta capacidad de absorción, garantizando comodidad y protección,
+                                            evitando la irritación de la piel y proporcionando una sensación de
+                                            frescura. Trabajamos con todas las marcas líderes en el mercado.</p>
+                                        <a href="#contacto"><button type="button"
+                                                class="btn btn-dark">Comprar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div> -->
+
+
+
             <section class="contacto" id="contacto">
                 <h1>Seccion de contacto</h1>
             </section>
@@ -211,6 +351,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
