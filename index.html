@@ -287,13 +287,19 @@
                             </strong>
                         </div>
                     </div>
-                    <div class="formulario">
-                        <form action="" class="input-form">
-                            <input class="input" type="text" placeholder=" Nombre">
-                            <input class="input" type="text" placeholder=" Email">
-                            <input class="input" type="text" placeholder=" Asunto">
-                            <input class="input input-msj" type="text" placeholder=" Mensaje">
+                    <div class="formulario"> <!-- https://formsubmit.co/testCodelium@gmail.com -->
+                        <form onsubmit="return validacon(event)" action="https://formsubmit.co/testCodelium@gmail.com" method="POST" class="input-form">
+                            <!-- Configurar el correo al que se desea recibir el email -->
+                            <input class="input" name="name" type="text" placeholder=" Nombre" >
+                            <input class="input" name="email" type="text" placeholder=" Email" >
+                            <input class="input" name="subject" type="text" placeholder=" Asunto" >
+                            <input class="input input-msj" name="message" type="text" placeholder=" Mensaje" >
                             <button type="submit" class="btn btn-dark">Enviar</button>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                            <!-- Configurar redireccionamiento despues de enviar formulario -->
+                            <input type="hidden" name="_cc" value="another@email.com"> <!-- Dejar correo de copia -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- deshabilitar el captcha -->
                         </form>
                     </div>
                 </div>
