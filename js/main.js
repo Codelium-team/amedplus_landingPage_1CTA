@@ -57,3 +57,27 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: '.swiper-button-prev',
     },
   });
+
+  const validacon = (event) => {
+    event.preventDefault();
+  
+    const form = event.target;
+    console.log(form)
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
+  
+    if (!name || !email || !subject || !message) {
+      alert('Por favor, completa todos los campos.');
+      return false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor, introduce un email válido.');
+      return false;
+    }
+
+    form.submit();
+  };

@@ -225,12 +225,12 @@ main {
 }
 
 .container-tienda {
-    width: 100%;
+    width: 90%;
 }
 
 .swiper {
-    width: 80%;
-    height: 100%;
+    width: 85%;
+    height: 610px;
     display: flex;
 }
 
@@ -277,7 +277,56 @@ main {
 }
 
 
-/* Temporal */
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px auto;
+    
+}
+
+.container-contacto{
+    padding: 20px;
+    display: flex;
+    width: 80%;
+    border: solid 1px #ececec;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.input-form button {
+    margin-top: 30px;
+}
+.input{
+    width: 80%;
+}
+
+.input-msj{
+    height: 50px;
+    resize: vertical;
+}
 footer {
     background-color: black;
     color: white;
@@ -417,6 +466,16 @@ footer {
     }
 }
 
+
+@media (max-width:768px){
+    .container-contacto{
+        flex-direction: column;
+    }
+
+    .texto-contacto {
+        width: 100%;
+    }
+}
 @media (max-width:650px){
     footer {
         flex-direction: column;
