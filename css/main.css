@@ -29,17 +29,25 @@ main {
     overflow-y: auto;
 }
 
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .imgLogo {
     width: 200px;
 }
 
 .titulo-inicio {
     height: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    background-image: url(../images/woman-buys-drugs-pharmacy.jpg);
+    background-image: url(../images/atencion-farmacia.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,8 +56,12 @@ main {
 .text-tituo-inicio {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding-left: 200px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
 }
 
 .text-tituo-inicio h2 {
@@ -64,6 +76,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70%;
+    margin: 50px 0px;
 
 }
 
@@ -72,13 +86,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 30px 30px 30px 0px;
 }
 
 
 .imagenes-descrip-inicio {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .imagenes-inicio {
@@ -88,6 +103,12 @@ main {
     mix-blend-mode: darken;
 }
 
+.acercaDe {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
 .titulo-acercaDe {
     text-align: center;
 }
@@ -95,11 +116,13 @@ main {
 
 .container-nos {
     display: flex;
-    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 
 .img-nos {
-    width: 50%;
+    width: 400px;
 }
 
 
@@ -111,7 +134,8 @@ main {
 .img-nos-responsive {
     display: none;
     visibility: hidden;
-    flex: 1
+    flex: 1;
+    margin: 10px;
 }
 
 .img-nos-responsive img {
@@ -119,7 +143,7 @@ main {
 }
 
 .text-nos {
-    padding: 20px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,39 +155,22 @@ main {
     justify-content: center;
 }
 
-.txt-serv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-}
-
-.parrafo-serv {
-    width: 500px;
-}
-
-.img-serv {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-}
-
-.img-serv img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
 .titulo-cat {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
+.categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
 .contenedor-cat {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -172,9 +179,9 @@ main {
 }
 
 .card-cat {
-    width: 500px;
+    width: 48%;
+    height: 100%;
     display: flex;
-    padding: 10px;
     align-items: start;
     justify-content: start;
     border-radius: 5px;
@@ -183,9 +190,8 @@ main {
 }
 
 .img-cat {
-    display: flex;
-    flex: 0 0 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     overflow: hidden;
     justify-content: center;
@@ -197,14 +203,16 @@ main {
     height: 100%;
     object-position: center;
     object-fit: cover;
+    box-sizing: content-box;
 }
 
 .txt-cat {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
+    justify-content: space-between;
+    padding: 20px;
     flex: 1;
+    height: 200px;
 }
 
 
@@ -218,6 +226,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px 0px;
+    height: 750px;
 }
 
 .titulo-tienda {
@@ -225,12 +235,12 @@ main {
 }
 
 .container-tienda {
-    width: 90%;
+    width: 70%;
+    height: 100%;
 }
 
 .swiper {
-    width: 85%;
-    height: 610px;
+    height: 600px;
     display: flex;
 }
 
@@ -240,7 +250,7 @@ main {
 }
 
 .swiper-slide {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     text-align: center;
     background: #fff;
@@ -248,14 +258,16 @@ main {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 530px !important;
 
 }
 
-.swiper-slide img {
+.img-tienda {
     width: 100%;
-    height: 200px;
+    height: 200px !important;
     display: flex;
     object-fit: cover;
+    object-position: center;
 }
 
 .text-card-tienda {
@@ -263,7 +275,7 @@ main {
     flex-direction: column;
     justify-content: space-between !important;
     padding: 0px 10px 10px 10px;
-    height: 100%;
+    height: 320px;
 }
 
 .txt-tienda h5 {
@@ -282,32 +294,34 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 30px 0px;
     padding: 20px auto;
-    
+
 }
 
-.container-contacto{
+.container-contacto {
     padding: 20px;
     display: flex;
-    width: 80%;
+    width: 70%;
     border: solid 1px #ececec;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.texto-contacto{
+.texto-contacto {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 20px;
 }
-.formulario{
+
+.formulario {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
+
 .input-form {
     display: flex;
     flex-direction: column;
@@ -316,17 +330,20 @@ main {
     gap: 10px;
     width: 100%;
 }
+
 .input-form button {
     margin-top: 30px;
 }
-.input{
+
+.input {
     width: 80%;
 }
 
-.input-msj{
+.input-msj {
     height: 50px;
     resize: vertical;
 }
+
 footer {
     background-color: black;
     color: white;
@@ -336,24 +353,28 @@ footer {
     align-items: center;
 
 }
+
 .maps {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
-.horario{
+
+.horario {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-.redes{
+
+.redes {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
+
 .direccion a,
 .redes a {
     text-decoration: none;
@@ -372,10 +393,23 @@ footer {
 #icon-tres {
     filter: invert(37%) sepia(39%) saturate(7031%) hue-rotate(337deg) brightness(78%) contrast(137%);
 }
+
 #icon-cuatro {
-    filter: invert(38%) sepia(1%) saturate(621%) hue-rotate(7deg) brightness(99%) contrast(81%);}
+    filter: invert(38%) sepia(1%) saturate(621%) hue-rotate(7deg) brightness(99%) contrast(81%);
+}
 
 
+@media(max-width:1430px) {
+    .card-cat {
+        width: 100%;
+    }
+
+    .txt-cat {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 
 @media (max-width:1024px) {
     .img-nos {
@@ -467,19 +501,44 @@ footer {
 }
 
 
-@media (max-width:768px){
-    .container-contacto{
+@media (max-width:768px) {
+    .container-contacto {
         flex-direction: column;
     }
 
     .texto-contacto {
         width: 100%;
     }
+
+    .text-descrip-inicio {
+        margin: 30px 0px;
+    }
 }
-@media (max-width:650px){
+
+@media (max-width:650px) {
     footer {
         flex-direction: column;
         gap: 5px;
+    }
+
+    .card-cat {
+        width: 90%;
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+        align-items: center;
+    }
+
+    .img-cat {
+        width: 100%;
+    }
+
+    .txt-cat {
+        padding-left: 0;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .txt-cat h5 {
+        text-align: center;
     }
 }
 
@@ -530,39 +589,17 @@ footer {
         width: 95%;
     }
 
+    .imagenes-inicio {
+        height: 100%;
+    }
+
     .img-oculta {
         display: none;
         visibility: hidden;
     }
 
-    .img-serv {
-        width: 95%;
-        height: auto;
-    }
 
-    .img-serv {
-        width: 95%;
-    }
 
-    .card-cat {
-        width: 70%;
-        flex-direction: column;
-        padding: 0px 0px 20px 0px;
-        align-items: center;
-    }
-
-    .img-cat {
-        width: 100%;
-    }
-
-    .txt-cat {
-        padding-left: 0;
-        padding: 10px 10px 0px 10px;
-    }
-
-    .txt-cat h5 {
-        text-align: center;
-    }
 
     .swiper-wrapper {
         height: 480px !important;
