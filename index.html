@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,11 +53,12 @@
                 </div>
                 <div class="descripcion-inicio">
                     <div class="text-descrip-inicio">
-                        <p class="p-2">Descubre nuestra gama de productos médicos de alta calidad y servicios de
+                        <p class="p-2">Descubre nuestra gama de productos médicos de alta calidad, servicios y
                             asesorías
-                            personalizados, diseñados para brindar el mejor cuidado a tu salud.</p>
-                        <a class="btn-inicio" href="#contacto"><button type="button"
-                                class="btn btn-dark">Comprar</button></a>
+                            personalizadas, diseñados para brindar el mejor cuidado a tu salud.</p>
+                        <a class="btn-inicio direction" href="#contacto">
+                            <button type="button" class="btn btn-dark">Comprar</button>
+                        </a>
                     </div>
                     <div class="imagenes-descrip-inicio">
                         <img src="./images/Jeringas.jpg" alt="img2" class="imagenes-inicio">
@@ -65,9 +69,6 @@
                 </div>
             </section>
             <section class="acercaDe" id="acercaDe">
-                <!-- <div class="titulo-acercaDe">
-                    <h1>Quienes somos?</h1>
-                </div> -->
                 <div class="container-nos">
                     <div class="img-nos">
                         <img src="./images/getty-images-ZLjLr9HwUGs-unsplash.jpg" alt="Nosotros">
@@ -96,7 +97,7 @@
                                 </p>
                             </div>
                             <div class="img-nos-responsive">
-                                <img src="./images/atencion-farmacia.jpg" alt="Nosotros">
+                                <img src="./images/atencion-3era-edad.jpg" alt="Nosotros">
                             </div>
                         </div>
                         <div class="">
@@ -104,8 +105,10 @@
                             <p>Despacho a domicilio sin costo, descuentos especiales, atención personalizada y mucho
                                 más!
                             </p>
-                            <div class="btn-nos">
-                                <a href="#contacto"><button type="button" class="btn btn-dark">Comprar</button></a>
+                            <div class="btn-nos ">
+                                <a href="#contacto" class="direction">
+                                    <button type="button" class="btn btn-dark">Comprar</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -123,9 +126,43 @@
                         <div class="txt-cat">
                             <h5 class="titulo-card-cat">Equipos Médicos</h5>
                             <p>Tecnología médica orientada a mantener tu bienestar.</p>
-                            <a href="#contacto" class="btn-cat">
-                                <button type="button" class="btn btn-dark">Comprar</button>
-                            </a>
+                            <!-- Button trigger modal -->
+                            <div class="modal-btn">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modal1">
+                                    ver más
+                                </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Equipos médicos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-parrafo">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                                    fugiat illum dolorum nobis facere beatae optio at saepe aliquid
+                                                    repudiandae iusto labore cum quibusdam mollitia maiores quis,
+                                                    itaque, ipsum quos.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque
+                                                    molestiae, provident cum perspiciatis error, similique quasi esse
+                                                    temporibus iure natus sed veritatis. Inventore repellendus corporis
+                                                    voluptas voluptatem eos. Sapiente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- final del modal -->
                         </div>
                     </div>
                     <div class="card-cat">
@@ -135,9 +172,45 @@
                         <div class="txt-cat">
                             <h5 class="titulo-card-cat"> Suministros hospitalarios</h5>
                             <p>Todo lo que necesitas para el uso cotidiano en un entorno clínico.</p>
-                            <a href="#contacto" class="btn-cat">
-                                <button type="button" class="btn btn-dark">Comprar</button>
-                            </a>
+                            <!-- Button trigger modal -->
+                            <div class="modal-btn">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modal2">
+                                    ver más
+                                </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Suministros
+                                                hospitalarios</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-parrafo">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                                    fugiat illum dolorum nobis facere beatae optio at saepe aliquid
+                                                    repudiandae iusto labore cum quibusdam mollitia maiores quis,
+                                                    itaque, ipsum quos.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque
+                                                    molestiae, provident cum perspiciatis error, similique quasi esse
+                                                    temporibus iure natus sed veritatis. Inventore repellendus corporis
+                                                    voluptas voluptatem eos. Sapiente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- final del modal -->
+
                         </div>
                     </div>
                     <div class="card-cat">
@@ -147,9 +220,43 @@
                         <div class="txt-cat">
                             <h5 class="titulo-card-cat">Cuidado en el hogar</h5>
                             <p>Productos pensados para facilitar el cuidado de pacientes en casa.</p>
-                            <a href="#contacto" class="btn-cat">
-                                <button type="button" class="btn btn-dark">Comprar</button>
-                            </a>
+                            <!-- Button trigger modal -->
+                            <div class="modal-btn">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modal3">
+                                    ver más
+                                </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Cuidados del hogar</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-parrafo">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                                    fugiat illum dolorum nobis facere beatae optio at saepe aliquid
+                                                    repudiandae iusto labore cum quibusdam mollitia maiores quis,
+                                                    itaque, ipsum quos.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque
+                                                    molestiae, provident cum perspiciatis error, similique quasi esse
+                                                    temporibus iure natus sed veritatis. Inventore repellendus corporis
+                                                    voluptas voluptatem eos. Sapiente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- final del modal -->
                         </div>
                     </div>
                     <div class="card-cat">
@@ -160,9 +267,43 @@
                         <div class="txt-cat">
                             <h5 class="titulo-card-cat">Protección personal</h5>
                             <p>Mascarillas, guantes y otros insumos similares de uso clínico.</p>
-                            <a href="#contacto" class="btn-cat">
-                                <button type="button" class="btn btn-dark">Comprar</button>
-                            </a>
+                            <!-- Button trigger modal -->
+                            <div class="modal-btn">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modal4">
+                                    ver más
+                                </button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Protección personal</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-parrafo">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                                    fugiat illum dolorum nobis facere beatae optio at saepe aliquid
+                                                    repudiandae iusto labore cum quibusdam mollitia maiores quis,
+                                                    itaque, ipsum quos.</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque
+                                                    molestiae, provident cum perspiciatis error, similique quasi esse
+                                                    temporibus iure natus sed veritatis. Inventore repellendus corporis
+                                                    voluptas voluptatem eos. Sapiente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- final del modal -->
                         </div>
                     </div>
                 </div>
@@ -184,7 +325,7 @@
                                             frescura.
                                             Trabajamos con todas las marcas líderes en el mercado.</p>
                                     </div>
-                                    <a href="#contacto">
+                                    <a href="#contacto" class="direction">
                                         <button type="button" class="btn btn-dark">Comprar</button>
                                     </a>
                                 </div>
@@ -198,7 +339,7 @@
                                         <p>on distintos tipos de material y tamaños, ofrecen una excelente sensibilidad
                                             y ajuste anatómico para procedimientos hospitalarios.</p>
                                     </div>
-                                    <a href="#contacto">
+                                    <a href="#contacto" class="direction">
                                         <button type="button" class="btn btn-dark">Comprar</button>
                                     </a>
                                 </div>
@@ -211,7 +352,7 @@
                                         <p> Disponibles en una gran variedad de capacidades, tamaños y funciones
                                             objetivo, asegurando encontrar la opción más adecuada a cada necesidad.</p>
                                     </div>
-                                    <a href="#contacto">
+                                    <a href="#contacto" class="direction">
                                         <button type="button" class="btn btn-dark">Comprar</button>
                                     </a>
                                 </div>
@@ -225,7 +366,7 @@
                                             relacionados a la presión arterial y la frecuencia cardíaca. Es portátil y
                                             fácil de usar.</p>
                                     </div>
-                                    <a href="#contacto">
+                                    <a href="#contacto" class="direction">
                                         <button type="button" class="btn btn-dark">Comprar</button>
                                     </a>
                                 </div>
@@ -270,8 +411,6 @@
                     </div>
                 </div>
             </section>
-
-
         </main>
         <footer>
             <div class="direccion">
