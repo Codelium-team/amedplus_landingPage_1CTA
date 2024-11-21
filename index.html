@@ -777,25 +777,34 @@
                   name="name"
                   type="text"
                   placeholder=" Nombre"
+                  required
+                  style="resize: both; width: 100%"
                 />
                 <input
                   class="input"
                   name="email"
                   type="text"
                   placeholder=" Email"
+                  required
+                  style="resize: both; width: 100%"
                 />
                 <input
                   class="input"
                   name="subject"
                   type="text"
                   placeholder=" Asunto"
+                  required
+                  style="resize: both; width: 100%"
                 />
-                <input
+                <textarea
                   class="input input-msj"
                   name="message"
-                  type="text"
-                  placeholder=" Mensaje"
-                />
+                  placeholder="Mensaje"
+                  required
+                  rows="4"
+                  style="resize: both; width: 100%"
+                ></textarea>
+
                 <button type="submit" class="btn btn-dark">Enviar</button>
                 <input
                   type="hidden"
