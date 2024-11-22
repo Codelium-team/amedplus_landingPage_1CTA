@@ -5,8 +5,43 @@
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
-    
+
 }
+header {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+body {
+    position: relative; /* Necesario para usar el pseudoelemento */
+    margin: 0;
+    height: 100%;
+    z-index: 0; /* Asegura que el contenido esté por encima del fondo */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/v870-tang-35-min_11zon.webp");
+    background-size: cover; /* Asegura que la imagen cubra el área completa */
+    background-position: right center; /* Centra la imagen a la derecha */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    opacity: 0.2; /* Ajusta la opacidad */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+.nav-link{
+    border-radius: 5px;
+}
+.nav-link:hover {
+    background-color: skyblue;
+    transition: background-color 0.5s ease;
+  }
 
 .contenedor {
     margin: 0;
@@ -24,7 +59,7 @@ p {
     padding: 5px;
     text-decoration: none;
     width: fit-content;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .input {
@@ -61,7 +96,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/atencion-farmacia.jpg);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/atencion-farmacia.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +107,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     border-radius: 5px;
@@ -82,9 +117,6 @@ main {
     font-size: 48px;
 }
 
-.text-tituo-inicio p {
-    
-}
 
 .descripcion-inicio {
     display: flex;
@@ -137,7 +169,7 @@ main {
 
 .img-nos {
     width: 400px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -152,12 +184,13 @@ main {
     visibility: hidden;
     flex: 1;
     margin: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.descrip-nos{
+.descrip-nos {
     margin: 10px;
 }
+
 .img-nos-responsive img {
     width: 100%;
     height: 100%;
@@ -219,7 +252,7 @@ main {
 .img-cat {
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -335,6 +368,7 @@ main {
     border: solid 1px #ececec;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .texto-contacto {
@@ -442,27 +476,45 @@ footer {
     .text-card-tienda p {
         font-size: 12px;
     }
-    .img-nos{
+
+    .img-nos {
         width: 300px;
     }
 }
 
 @media (max-width:1024px) {
+    .imagenes-descrip-inicio{
+        flex-direction: column;
+    }
     .img-nos {
-        width: 40%;
-        height: 100%;
-        object-position: center;
-        object-fit: cover;
+        display: none;
+        visibility: hidden;
     }
 
-    .text-nos {
-        flex: 1;
-    }
-    .img-nos{
-        width: 400px;
+    .img-nos-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+        width: 100%;
+
     }
 
-    
+    .img-nos-responsive img {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .responsive-nos {
+        display: flex;
+    }
+
+    .descrip-nos {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 960px) {
@@ -473,6 +525,7 @@ footer {
     }
 
     .imagenes-descrip-inicio {
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
@@ -505,34 +558,11 @@ footer {
         margin: 10px 0px 10px 0px;
     }
 
-    .img-nos {
-        display: none;
-        visibility: hidden;
-    }
-
-    .img-nos-responsive {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        visibility: visible;
-        width: 40%;
-
-    }
-
-    .img-nos-responsive img {
-        border-radius: 5px;
+    .descrip-nos {
         width: 100%;
     }
-
     .responsive-nos {
-        display: flex;
-    }
-
-    .descrip-nos {
-        width: 60%;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 }
 
@@ -661,5 +691,14 @@ footer {
 
     .swiper-wrapper {
         height: 530px !important;
+    }
+    
+    .contacto p{
+        text-align: start;
+    }
+
+    .txt-hidden {
+        display: none;
+        visibility: hidden;
     }
 }
