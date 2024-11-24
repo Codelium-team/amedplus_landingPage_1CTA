@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmedPlus</title>
@@ -34,9 +35,9 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link px-3" aria-current="page" href="#inicio">INICIO</a>
-                            <a class="nav-link px-3" href="#acercaDe">NOSOTROS</a>
-                            <a class="nav-link px-3" href="#categoria">CATEGORÍAS</a>
                             <a class="nav-link px-3" href="#tienda">TIENDA</a>
+                            <a class="nav-link px-3" href="#categoria">CATEGORÍAS</a>
+                            <a class="nav-link px-3" href="#acercaDe">NOSOTROS</a>
                             <a class="nav-link px-3" aria-disabled="true" href="#contacto">CONTACTO</a>
                         </div>
                     </div>
@@ -62,8 +63,8 @@
                             Descubre nuestra gama de productos médicos de alta calidad, servicios y
                             asesorías
                             personalizadas, diseñados para brindar el mejor cuidado a tu salud.</p>
-                        <a class="btn-inicio direction" href="#contacto">
-                            <button type="button" class="btn btn-dark">Comprar</button>
+                        <a class="btn-inicio direction" href="#tienda">
+                            <button type="button" class="btn btn-dark">Ver más</button>
                         </a>
                     </div>
                     <div class="imagenes-descrip-inicio">
@@ -74,60 +75,89 @@
                     </div>
                 </div>
             </section>
-            <section class="acercaDe" id="acercaDe">
-                <div class="container-nos">
-                    <div class="img-nos">
-                        <img src="./images/getty-images-ZLjLr9HwUGs-unsplash.jpg" alt="Nosotros">
-                    </div>
-                    <div class="text-nos">
-                        <div class="responsive-nos">
-                            <div class="descrip-nos">
-                                <h2>¿Quienes somos?</h2>
-                                <p>
-                                    Somos una empresa cuyo objetivo siempre ha sido intentar
-                                    mejorar el suministro de insumos médicos en la región de
-                                    O'Hggins, con el objetivo de dar una alternativa de acceso
-                                    que sea más cercana a las personas, priorizando siempre el
-                                    bienestar de nuestros clientes.
-                                </p>
+            <section class="tienda" id="tienda">
+                <div class="titulo-tienda">
+                    <h2>Productos más solicitados</h2>
+                </div>
+                <div class="container-tienda">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide carta">
+                                <img class="img-tienda" src="./images/Pañales.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Pañales para adulto</h5>
+                                        <p>
+                                            Entre las marcas disponibles se encuentran
+                                            principalmente Plenitud, Cotidian, Higieclin, Mimi,
+                                            Aposito Blue y Proactive. <br />
+                                            Es posible realizar <strong>descuentos</strong> por compras al por
+                                            mayor o que se requieran de forma recurrente.
+                                        </p>
+                                    </div>
+                                    <a href="#contacto" class="direction">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="img-nos-responsive">
-                                <img src="./images/productos-hospitales.jpg" alt="Nosotros">
+
+                            <div class="swiper-slide carta">
+                                <img class="img-tienda" src="./images/guantes-quirurjicos.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Guantes quirúrgicos</h5>
+                                        <p> Materiales disponibles: Vinilo, Látex y Nitrilo
+                                            principalmente.</p>
+                                        <p>Para ellos se tiene la variedad con o sin polvo y
+                                            estériles o no.</p>
+                                    </div>
+                                    <a href="#contacto" class="direction">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-tienda" src="./images/Jeringas.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Jeringas</h5>
+                                        <p>
+                                            Tamaños de jeringa más
+                                            utilizados.<br />
+                                            Amplia gama de medidas de agujas, que se usan en
+                                            complemento con las jeringas.<br />
+                                            <strong>Descuentos especiales para profesionales de la salud.</strong>
+                                        </p>
+                                    </div>
+                                    <a href="#contacto" class="direction">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-tienda" src="./images/Tomapresión.jpg" alt="img-pañales">
+                                <div class="text-card-tienda">
+                                    <div class="txt-tienda">
+                                        <h5>Tomapresión Digital</h5>
+                                        <p>
+                                            Equipos de toma de presión de alta calidad,
+                                            disponibles para su uso en clínicas y en el hogar.<br />
+                                            Encuentra los mejores equipos de toma de presión,
+                                            ideales para monitorear la salud de manera precisa.
+                                        </p>
+                                    </div>
+                                    <a href="#contacto" class="direction">
+                                        <button type="button" class="btn btn-dark">Comprar</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="responsive-nos">
-                            <div class="descrip-nos">
-                                <p>Nos especializamos en atender las necesidades de nuestros clientes con enfoque en la
-                                    excelencia. Nuestro servicio está orientado a entregar atención especial a personas
-                                    de la tercera edad.
-                                </p>
-                                <p>
-                                    En Amedplus nos importa ofrecerte la mejor atención posible.
-                                    Si tienes preguntas sobre nuestros productos, servicios o
-                                    necesitas asesoría personalizada, no dudes en ponerte en
-                                    contacto con nosotros. Nuestro equipo estará encantado de
-                                    brindarte toda la información que necesites y ayudarte a
-                                    encontrar la solución ideal para ti o para tus seres
-                                    queridos.
-                                </p>
-                            </div>
-                            <div class="img-nos-responsive">
-                                <img src="./images/atencion-3era-edad.jpg" alt="Nosotros">
-                            </div>
-                        </div>
-                        <div class="descrip-nos">
-                            <h5>Beneficios?</h5>
-                            <p>Despacho a domicilio sin costo, descuentos especiales, atención personalizada y mucho
-                                más!
-                            </p>
-                            <div class="btn-nos ">
-                                <a href="#contacto" class="direction">
-                                    <button type="button" class="btn btn-dark">Comprar</button>
-                                </a>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
+            </section>
+            <section>
+                
             </section>
             <section class="categoria" id="categoria">
                 <div class="titulo-cat">
@@ -479,84 +509,58 @@
                     </div>
                 </div>
             </section>
-            <section class="tienda" id="tienda">
-                <div class="titulo-tienda">
-                    <h2>Productos más solicitados</h2>
-                </div>
-                <div class="container-tienda">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide carta">
-                                <img class="img-tienda" src="./images/Pañales.jpg" alt="img-pañales">
-                                <div class="text-card-tienda">
-                                    <div class="txt-tienda">
-                                        <h5>Pañales para adulto</h5>
-                                        <p>
-                                            Entre las marcas disponibles se encuentran
-                                            principalmente Plenitud, Cotidian, Higieclin, Mimi,
-                                            Aposito Blue y Proactive. <br />
-                                            Es posible realizar <strong>descuentos</strong> por compras al por
-                                            mayor o que se requieran de forma recurrente.
-                                        </p>
-                                    </div>
-                                    <a href="#contacto" class="direction">
-                                        <button type="button" class="btn btn-dark">Comprar</button>
-                                    </a>
-                                </div>
+            <section class="acercaDe" id="acercaDe">
+                <div class="container-nos">
+                    <div class="img-nos">
+                        <img src="./images/getty-images-ZLjLr9HwUGs-unsplash.jpg" alt="Nosotros">
+                    </div>
+                    <div class="text-nos">
+                        <div class="responsive-nos">
+                            <div class="descrip-nos">
+                                <h2>¿Quienes somos?</h2>
+                                <p>
+                                    Somos una empresa cuyo objetivo siempre ha sido intentar
+                                    mejorar el suministro de insumos médicos en la región de
+                                    O'Hggins, con el objetivo de dar una alternativa de acceso
+                                    que sea más cercana a las personas, priorizando siempre el
+                                    bienestar de nuestros clientes.
+                                </p>
                             </div>
-
-                            <div class="swiper-slide carta">
-                                <img class="img-tienda" src="./images/guantes-quirurjicos.jpg" alt="img-pañales">
-                                <div class="text-card-tienda">
-                                    <div class="txt-tienda">
-                                        <h5>Guantes quirúrgicos</h5>
-                                        <p> Materiales disponibles: Vinilo, Látex y Nitrilo
-                                            principalmente.</p>
-                                        <p>Para ellos se tiene la variedad con o sin polvo y
-                                            estériles o no.</p>
-                                    </div>
-                                    <a href="#contacto" class="direction">
-                                        <button type="button" class="btn btn-dark">Comprar</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-tienda" src="./images/Jeringas.jpg" alt="img-pañales">
-                                <div class="text-card-tienda">
-                                    <div class="txt-tienda">
-                                        <h5>Jeringas</h5>
-                                        <p>
-                                            Tamaños de jeringa más
-                                            utilizados.<br />
-                                            Amplia gama de medidas de agujas, que se usan en
-                                            complemento con las jeringas.<br />
-                                            <strong>Descuentos especiales para profesionales de la salud.</strong>
-                                        </p>
-                                    </div>
-                                    <a href="#contacto" class="direction">
-                                        <button type="button" class="btn btn-dark">Comprar</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-tienda" src="./images/Tomapresión.jpg" alt="img-pañales">
-                                <div class="text-card-tienda">
-                                    <div class="txt-tienda">
-                                        <h5>Tomapresión Digital</h5>
-                                        <p>
-                                            Equipos de toma de presión de alta calidad,
-                                            disponibles para su uso en clínicas y en el hogar.<br />
-                                            Encuentra los mejores equipos de toma de presión,
-                                            ideales para monitorear la salud de manera precisa.
-                                        </p>
-                                    </div>
-                                    <a href="#contacto" class="direction">
-                                        <button type="button" class="btn btn-dark">Comprar</button>
-                                    </a>
-                                </div>
+                            <div class="img-nos-responsive">
+                                <img src="./images/productos-hospitales.jpg" alt="Nosotros">
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="responsive-nos">
+                            <div class="descrip-nos">
+                                <p>Nos especializamos en atender las necesidades de nuestros clientes con enfoque en la
+                                    excelencia. Nuestro servicio está orientado a entregar atención especial a personas
+                                    de la tercera edad.
+                                </p>
+                                <p>
+                                    En Amedplus nos importa ofrecerte la mejor atención posible.
+                                    Si tienes preguntas sobre nuestros productos, servicios o
+                                    necesitas asesoría personalizada, no dudes en ponerte en
+                                    contacto con nosotros. Nuestro equipo estará encantado de
+                                    brindarte toda la información que necesites y ayudarte a
+                                    encontrar la solución ideal para ti o para tus seres
+                                    queridos.
+                                </p>
+                            </div>
+                            <div class="img-nos-responsive">
+                                <img src="./images/atencion-3era-edad.jpg" alt="Nosotros">
+                            </div>
+                        </div>
+                        <div class="descrip-nos">
+                            <h5>Beneficios?</h5>
+                            <p>Despacho a domicilio sin costo, descuentos especiales, atención personalizada y mucho
+                                más!
+                            </p>
+                            <!-- <div class="btn-nos ">
+                                <a href="#contacto" class="direction">
+                                    <button type="button" class="btn btn-dark">Comprar</button>
+                                </a>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -635,14 +639,13 @@
         </footer>
     </div>
     <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
