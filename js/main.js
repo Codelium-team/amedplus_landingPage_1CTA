@@ -37,16 +37,28 @@ const validacion = (event) => {
     const message = form.message.value.trim();
 
     if (!name || !email || !subject || !message) {
-        alert('Por favor, completa todos los campos.');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor, ingresa todos los campos.',
+        });
         return false;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        alert('Por favor, introduce un email válido.');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor, ingresa un email válido.',
+        });
         return false;
     }
-
+    Swal.fire({
+        icon: 'success',
+        title: '¡Formulario enviado!',
+        text: 'Tus consulta ha sido enviada exitosamente.',
+    });
     form.submit();
 };
 
