@@ -23,7 +23,7 @@
     <div class="contenedor" id="contenedor">
         <header>
             <nav class="navbar navbar-expand-md  p-0">
-                <div class="container-fluid">
+                <div class="container-fluid p-0">
                     <a class="navbar-brand ps-3" href="#">
                         <img class="imgLogo" src="./images/Logo.png" alt="Logo Amedplus">
                     </a>
@@ -63,8 +63,8 @@
                             Descubre nuestra gama de productos médicos de alta calidad, servicios y
                             asesorías
                             personalizadas, diseñados para brindar el mejor cuidado a tu salud.</p>
-                        <a class="btn-inicio direction" href="#tienda">
-                            <button type="button" class="btn btn-dark">Ver más</button>
+                        <a class="btn-inicio direction" href="#contacto">
+                            <button type="button" class="btn btn-dark">Contáctanos</button>
                         </a>
                     </div>
                     <div class="imagenes-descrip-inicio">
@@ -156,9 +156,6 @@
                     </div>
                 </div>
             </section>
-            <section>
-                
-            </section>
             <section class="categoria" id="categoria">
                 <div class="titulo-cat">
                     <h2>Categorias</h2>
@@ -241,8 +238,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
+                                            <a href="#contacto" type="button" id="btn-comprar-1" class="btn btn-dark desp" >Comprar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -327,14 +323,12 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
+                                            <a href="#contacto" type="button" id="btn-comprar-2" class="btn btn-dark desp" >Comprar</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- final del modal -->
-
                         </div>
                     </div>
                     <div class="card-cat">
@@ -412,8 +406,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
+                                            <a href="#contacto" type="button" id="btn-comprar-3" class="btn btn-dark desp" >Comprar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -498,8 +491,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
+                                            <a href="#contacto" type="button" id="btn-comprar-4" class="btn btn-dark desp" >Comprar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -590,7 +582,7 @@
                         </div>
                     </div>
                     <div class="formulario"> <!-- https://formsubmit.co/testCodelium@gmail.com -->
-                        <form onsubmit="return validacon(event)" action="https://formsubmit.co/testCodelium@gmail.com"
+                        <form onsubmit="return validacion(event)" action="https://formsubmit.co/testCodelium@gmail.com"
                             method="POST" class="input-form">
                             <!-- Configurar el correo al que se desea recibir el email -->
                             <input class="input" name="name" type="text" placeholder=" Nombre">
@@ -609,33 +601,40 @@
             </section>
         </main>
         <footer>
-            <div class="direccion">
-                <a href="https://maps.app.goo.gl/apmCUxFNqYK3CXCa9" class="maps" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="icon-tres"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                    </svg>
-                    <p class="m-0">Gamero #111, Rancagua.</p>
-                </a>
-            </div>
-            <div class="horario">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="icon-cuatro"
-                    class="bi bi-smartwatch" viewBox="0 0 16 16">
-                    <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5z" />
-                    <path
-                        d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667M4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3" />
-                </svg>
-                <p class="m-0">Lunes a Viernes de 10:00 hrs a 17:00 hrs.</p>
-            </div>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100064212337395" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-facebook" id="icon-uno"
-                        viewBox="0 0 16 16">
+            <div class="container-footer">
+                <div class="direccion">
+                    <a href="https://maps.app.goo.gl/apmCUxFNqYK3CXCa9" class="maps" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="icon-tres"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>
+                        <p class="m-0">Gamero #111, Rancagua.</p>
+                    </a>
+                </div>
+                <div class="horario">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="icon-cuatro"
+                        class="bi bi-smartwatch" viewBox="0 0 16 16">
+                        <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5z" />
                         <path
-                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667M4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3" />
                     </svg>
-                </a>
+                    <p class="m-0">Lunes a Viernes de 10:00 a 17:00 hrs.</p>
+                </div>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100064212337395" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="bi bi-facebook"
+                            id="icon-uno" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </div>
             </div>
+
+            <div class="text-center py-1 codelium">&copy; All rights reserved. Made with ❤ by <a class="codelium d-inline fw-normal p-0"
+                    href="https://www.codelium.cl/" target="_blank" >Codelium</a></div>
+
         </footer>
     </div>
     <!-- Bootstrap -->
