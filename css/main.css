@@ -5,7 +5,7 @@
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
-
+  height: fit-content;
 }
 
 header {
@@ -24,6 +24,7 @@ body {
   height: 100%;
   z-index: 0;
   /* Asegura que el contenido esté por encima del fondo */
+  overflow: hidden;
 }
 
 body::before {
@@ -448,9 +449,11 @@ main {
   align-items: center;
   width: 33%;
 }
+
 .direccion {
   width: 33%;
 }
+
 .direccion a,
 .redes a {
   text-decoration: none;
@@ -565,6 +568,7 @@ main {
   .descrip-nos {
     width: 100%;
   }
+
   .responsive-nos {
     flex-direction: column;
   }
@@ -593,9 +597,11 @@ main {
     flex-direction: column;
     gap: 5px;
   }
+
   .direccion {
     width: 100%;
   }
+
   .card-cat {
     width: 90%;
     flex-direction: column;
